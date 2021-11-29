@@ -1,0 +1,13 @@
+.review-preview {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // background: beige;
+    margin: 0.2em;
+    height: 3em;
+    
+    p {
+        margin: 0.5em 0.5em;
+        color: black;
+    }
+}

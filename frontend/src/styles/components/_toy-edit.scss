@@ -1,0 +1,126 @@
+.toy-edit {
+    position: absolute;
+    left: 0;
+    right: 0;
+
+    z-index: 50;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    background-color: lighten( $clr1, 40% );
+    padding: 0.5em 1em 1em;
+    width: 20em;
+    margin: auto;
+    border-radius: 0.5em;
+    border: 3px solid $clr1;
+
+    box-shadow: 0 0 em(15px) 0 rgba(0, 0, 0, 0.4);
+
+    > a{
+        margin-left: 90%;
+        font-size: 1.5em;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+
+        .toy-label {
+            margin-bottom: 1em;
+        }
+        
+        .toy-instock{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 1em;
+        }
+
+        .switch {
+            position: relative;
+            width: em(60px);
+            height: em(34px);
+            
+            
+
+            margin: auto 0;
+
+            .toy-instock {
+                opacity: 0;
+                width: 0;
+                height: 0;
+            }
+
+            .slider {
+                position: absolute;
+                cursor: pointer;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: #ccc;
+                transition: 0.4s;
+            }
+
+            .slider:before {
+                position: absolute;
+                content: '';
+                height: em(26px);
+                width: em(26px);
+                left: em(4px);
+                bottom: em(4px);
+                background-color: white;
+                -webkit-transition: 0.4s;
+                transition: 0.4s;
+            }
+
+            input:checked + .slider {
+                background-color: #2196f3;
+            }
+
+            input:focus + .slider {
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+            }
+
+            input:checked + .slider:before {
+                transform: translateX(26px);
+            }
+
+            /* Rounded sliders */
+            .slider.round {
+                border-radius: 34px;
+            }
+
+            .slider.round:before {
+                border-radius: 50%;
+            }
+        }
+
+        label {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0 0 1em;
+
+            > input {
+                height: em(40px);
+                border-radius: 0.5em;
+                border: none;
+                display: flex;
+                font-size: 1em;
+            }
+
+            .toy-name,
+            .toy-price {
+                width: 12em;
+                margin-inline-start: 1em;
+                outline: none;
+                padding: 0 0.5em;
+            }
+        }
+    }
+}

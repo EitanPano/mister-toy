@@ -1,0 +1,19 @@
+.main-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: em(60px);
+    background-color: $clr1;
+    margin-bottom: 1em;
+
+    a {
+        margin: 1em;
+        color: $clr5;
+        font-weight: bold;
+        transition: 0.2s;
+
+        &:hover{
+            transform: scale(1.4);
+        }
+    }
+}

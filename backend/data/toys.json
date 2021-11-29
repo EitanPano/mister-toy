@@ -1,0 +1,54 @@
+[
+  {
+    "name": "Monopoly",
+    "price": 199,
+    "labels": [
+      "box game",
+      "adult ",
+      "outdoor"
+    ],
+    "inStock": true,
+    "reviews": [],
+    "_id": "1dLIGQu9",
+    "createdAt": 1637681264869
+  },
+  {
+    "_id": "FGuXwc23",
+    "name": "Shooting Soldier",
+    "price": 149,
+    "labels": [
+      "soldier",
+      "battery powered",
+      "outdoor"
+    ],
+    "inStock": true,
+    "reviews": null,
+    "createdAt": 1637685894685
+  },
+  {
+    "_id": "Mic3AN4n",
+    "name": "Anytoy",
+    "price": "119",
+    "labels": [
+      "baby",
+      "doll",
+      "outdoor"
+    ],
+    "inStock": false,
+    "reviews": null,
+    "createdAt": 1637689657657
+  },
+  {
+    "_id": "ZpYglzQP",
+    "name": "Testing Toy",
+    "price": "119",
+    "labels": [
+      "on wheels",
+      "art",
+      "puzzle"
+    ],
+    "inStock": false,
+    "reviews": null,
+    "createdAt": 1637699190202
+  }
+]

@@ -1,0 +1,68 @@
+.btns-box{
+    display: flex;
+    justify-content: center;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0.5em;
+    border: none;
+    border-radius: 0.4em;
+    font-weight: bold;
+    margin: 0 0.5em;
+    font-size: 1em;
+    transition: 0.2s;
+
+
+
+    &.btn-add{
+        background-color: $btn-add;
+        color: $clr5;
+
+        width: 10em;
+        margin: auto;
+
+        &:hover{
+            background-color: lighten( $btn-add, 10% );
+            box-shadow:inset 0 0 0 3px $btn-add;
+        }
+    }
+    
+    &.btn-edit{
+        background-color: $btn-edit;
+        color: $clr5;
+
+        width: 2.5em;
+        height: 2.5em;
+        &:hover{
+            background-color: lighten( $btn-edit, 10% );
+            box-shadow:inset 0 0 0 3px $btn-edit;
+        }
+    }
+    
+    &.btn-remove{
+        background-color: $btn-remove;
+        color: $clr5;
+
+        width: 2.5em;
+        height: 2.5em;
+        &:hover{
+            background-color: lighten( $btn-remove, 10% );
+            box-shadow:inset 0 0 0 3px $btn-remove;
+        }
+    }
+
+    &.btn-save{
+        background-color: $btn-save;
+        color: $clr5;
+
+        &:hover{
+            background-color: lighten( $btn-save, 10% );
+            box-shadow:inset 0 0 0 3px $btn-save;
+        }
+    }
+}
+

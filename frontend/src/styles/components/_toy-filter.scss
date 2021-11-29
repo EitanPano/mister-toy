@@ -1,0 +1,57 @@
+.toy-filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    label{
+        max-width: 35vh
+    }
+    
+    .search{
+        height: em(45px);
+        max-width: 80%;
+        background: rgb(251, 251, 251);
+        display: flex;
+        align-items: center;
+        border-radius: 0.5em;
+        padding: 0 1em;
+        margin-bottom: 1em;
+        border: 3px solid rgb(220, 220, 220);
+        
+        input, select{
+            max-width: 100%;
+            font-size: 1em;
+            border: none;
+            outline: none;
+            background: rgb(251, 251, 251);
+        }
+        select{
+            border-left: 1px solid rgb(220, 220, 220);
+            height: 100%;
+            width: 3.5em;
+            text-align: left;
+        }
+    }
+
+    .sort{
+        margin: 0.5em 0 2em;
+        display: flex;
+        p{
+            margin: 0.5em;
+            color: rgb(255, 255, 255);
+        }
+        
+        button{
+            color: rgb(255, 255, 255);
+            border: none;
+            background: transparent;
+            width: initial;
+            margin: 0 0.5em;
+            font-weight: bold;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}

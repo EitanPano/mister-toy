@@ -1,0 +1,98 @@
+// SETUP
+// @import 'setup/typography';
+@import 'setup/variables';
+@import 'setup/mixins';
+@import 'setup/functions';
+
+// BASICS
+@import 'basics/helpers';
+@import 'basics/base';
+@import 'basics/layout';
+
+// COMPONENTS
+@import 'components/buttons';
+@import 'components/auth';
+@import 'components/chat';
+@import 'components/main-nav';
+@import 'components/toy-filter';
+@import 'components/toy-card';
+@import 'components/toy-edit';
+@import 'components/review-preview';
+
+
+
+
+
+.toy-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(238, 238, 238);
+
+    img {
+        width: 40vh;
+        height: 40vh;
+        border-radius: 50%;
+        object-fit: fill;
+    }
+
+    p{
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+    }
+
+    > form {
+        display: flex;
+        flex-direction: column;
+
+        textarea{
+            resize: none;
+            padding: 0.5em;
+            font-size: 1em;
+            border: 3px solid gray;
+            outline: none;
+            border-radius: 0.5em;
+        }
+
+        p{
+            color: white;
+            font-weight: bold;
+        }
+        select{
+            font-size: 1.1em;
+        }
+
+        button{
+            height: 2.5em;
+            border-radius: 0.5em;
+            border: none;
+            background: beige;
+            font-weight: bold;
+        }
+    }
+}
+
+.dashboard{
+    background: rgb(219, 255, 244); 
+}
+
+.home, .about, .gmap {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 5em;
+
+    p {
+        margin: auto;
+        max-width: 50ch;
+        font-weight: bold;
+    }
+
+    .branches-box {
+        margin: 2em;
+    }
+}

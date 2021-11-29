@@ -1,0 +1,68 @@
+.toy-card {
+    position: relative;
+    font-weight: bold;
+    cursor: pointer;
+    margin: auto;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    border: 3px solid #{$clr3};
+    border-radius: 0.5em;
+    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.4);
+
+    width: 16em;
+    height: 20em;
+    background-color: rgb(240, 255, 248);
+
+    transition: 0.2s;
+
+    &:hover{
+        transform: scale(1.05);
+    }
+
+    img {
+        width: 100%;
+        height: 70%;
+        position: absolute;
+        mix-blend-mode:multiply;
+        border-radius: 0.5em;
+    }
+
+    > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-content: flex-end;
+        height: 8em;
+        height: 100%;
+
+        p {
+            font-size: 1.2em;
+            mix-blend-mode:normal;
+            margin: 0.2em auto;
+            // background: blue;
+            // color: white;
+        }
+
+        .labels {
+            display: flex;
+            
+            flex-wrap: wrap;
+            p {
+                background-color: rgba(255, 67, 67, 0.548);
+                padding: 0.2em 0.5em;
+                border-radius: 1em;
+                margin: 0.2em auto;
+                color: white;
+                font-size: 0.9em
+                // width: 5em;
+            }
+        }
+
+    }
+
+
+}
